@@ -8,12 +8,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
 /**
  * Created by Krzysztof Wasiak on 30/03/2016.
  */
+@Service
 public class EndpointToRouterClientImpl implements EndpointToRouterClient {
 
     @Autowired

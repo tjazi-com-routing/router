@@ -1,8 +1,11 @@
 package com.tjazi.routing.router.client.utils;
 
+import org.springframework.stereotype.Service;
+
 /**
  * Created by Krzysztof Wasiak on 05/04/2016.
  */
+@Service
 public class RouterQueuesNameGeneratorImpl implements RouterQueuesNameGenerator {
 
     private final static String routerQueueNameFormat = "router_%s_%s_queue";
